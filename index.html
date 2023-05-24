@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mabalacat Pet Clinic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <input type="hidden" id="page" value="Home">
+        <div class="container-fluid header">
+            <div class="container">
+                <div class="flex-container logoWrapper">
+                    <div class="logoCenter"><img src="images/mpc-logo.png" class="logo"></div>
+                    <div class="contactCenter">
+                        Contact Us <i class="fa-solid fa-phone"></i> 
+                        <span class="phoneNumber">+6333234324</span>
+                        <a href="cart.html" class="btn btn-outline-secondary me-2 btnCart"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>  
+                    
+                </div>
+            </div>
+            <div class="container mainNavigation">
+                <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" aria-label="Ninth navbar example">
+                    <div class="container-xl">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarsExample07XL">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown07XL" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown07XL">
+                            <li><a class="dropdown-item" href="check-up.html">Check-Up</a></li>
+                            <li><a class="dropdown-item" href="treatment.html">Treatment</a></li>
+                            <li><a class="dropdown-item" href="vaccinaton.html">Vaccination</a></li>
+                            <li><a class="dropdown-item" href="surgeries.html">Surgeries</a></li>
+                            <li><a class="dropdown-item" href="grooming.html">Grooming</a></li>
+                            <li><a class="dropdown-item" href="blood-test.html">Blood Test</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown07XL2" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown07XL2">
+                            <li><a class="dropdown-item" href="products.html">For dogs</a></li>
+                            <li><a class="dropdown-item" href="products-cats.html">For cats</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        </ul>
+                        <form class="me-2">
+                        <!--input class="form-control searchText" type="text" placeholder="Search" aria-label="Search"-->
+                        <div class="input-group">
+                            <label for="search"></label>
+                            <input type="text" class="form-control border-end-0 border rounded-pill" id="example-search-input" placeholder="Search">
+                            <!-- <input class="form-control border-end-0 border rounded-pill" type="search" value="search" id="example-search-input">  -->
+                            <span class="input-group-append">
+                                <button class="btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill ms-n5" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                        </form>
+                    </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active carouselSection1">
+    
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Welcome To Mabalacat Pet Clinic!</h1>
+                <p>You Can now book an appointment for your pet.</p>
+                <p><a class="btn btn-primary" href="contact.html"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;Book An Appointment</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carouselSection2">
+    
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Learn More About Us.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p><a class="btn btn-primary" href="about.html"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;&nbsp;Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carouselSection3">
+    
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Here Are The Products That We Offer</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p><a class="btn btn-primary" href="our-products.html"><i class="fa fa-search-plus" aria-hidden="true"></i>&nbsp;&nbsp;Products</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- END CAROUSEL -->
+
+    <!-- START STORY -->
+    <div class="container-fluid story">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="sectionTitle" data-aos="fade-up">Our Story</h2>
+                    <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam explicabo neque suscipit non, natus, fuga, veritatis eligendi ea accusamus saepe eos voluptatibus aliquid cupiditate ullam delectus praesentium tenetur accusantium. Sit?</p>
+                    <div class="sectionButtons" data-aos="fade-up">
+                        <button class="btn btn-primary"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;Request a Call</button>
+                        <div class="callData">
+                            <span class="colorGray">or Call Us:</span> <span class="colorOrange">+6355554454</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-left">
+                    <img src="images/dog-and-cat.webp" width="100%" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END STORY -->
+
+    <!-- SECTION EXTRA 1 -->
+    <div class="container-fluid sectionExtra1" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col text-center"><i class="fa-solid fa-scissors"></i></div>
+                        <div class="col">
+                            <h5>Top Groomers</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in incidunt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col text-center"><i class="fa-solid fa-award"></i></div>
+                        <div class="col"> 
+                            <h5>V.I.P Section</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in incidunt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col text-center"><i class="fa-solid fa-paw"></i></div>
+                        <div class="col"> 
+                            <h5>We love every pet</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in incidunt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION EXTRA 2 -->
+
+    <!-- START SERVICES -->
+    <div class="container-fluid services" data-aos="fade-up">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="sectionTitle">Our Services</h2>
+                <img src="images/title_underline.webp" />
+            </div>
+            <div class="clearfix">&nbsp;</div>
+            <div class="clearfix">&nbsp;</div>
+            <div class="clearfix">&nbsp;</div>
+            <div class="row">
+                <div class="col">
+                    <div class="row" data-aos="fade-up">
+                        <div class="col text-end">
+                            <div class="mb-2">
+                                <a class="linkServices" href="check-up.html"><span class="servicesTitle">Check-Up</span></a>
+                                <i class="fa-solid fa-stethoscope"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet<br />consectetur, adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="row" data-aos="fade-up">
+                        <div class="col text-end">
+                            <div class="mb-2">
+                                <a class="linkServices" href="treatment.html"><span class="servicesTitle">Treatment</span></a>
+                                <i class="fa-solid fa-user-nurse"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet<br />consectetur, adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="row" data-aos="fade-up">
+                        <div class="col text-end">
+                            <div class="mb-2">
+                                <a class="linkServices" href="vaccinaton.html"><span class="servicesTitle">Vaccination</span></a>
+                                <i class="fa-solid fa-syringe"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet<br />consectetur, adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center" data-aos="fade-up"><img src="images/services-dog.webp" /></div>
+                <div class="col">
+                    <div class="col">
+                        <div class="row" data-aos="fade-up">
+                            <div class="col">
+                                <div class="mb-2">
+                                    <i class="fa-solid fa-star-of-life"></i>
+                                    <a class="linkServices" href="surgeries.html"><span class="servicesTitle">Surgeries</span></a>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet<br />consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="row" data-aos="fade-up">
+                            <div class="col">
+                                <div class="mb-2">
+                                    <i class="fa-solid fa-scissors"></i>
+                                    <a class="linkServices" href="grooming.html"><span class="servicesTitle">Grooming</span></a>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet<br />consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="row" data-aos="fade-up">
+                            <div class="col">
+                                <div class="mb-2">
+                                    <i class="fa-solid fa-house-chimney-medical"></i>
+                                    <a class="linkServices" href="blood-test.html"><span class="servicesTitle">Blood Test</span></a>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet<br />consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SERVICES -->
+
+    <!-- SECTION EXTRA 2 -->
+    <div class="container-fluid sectionExtra2" data-aos="fade-up">
+        <div class="container">
+            
+          
+                    <div class="row">   
+                        <div class="col">
+                            <div class="card">
+                                <img
+                                src="images/grooming2.jpg"
+                                class="card-img-top"
+                                alt=""
+                                />
+                                <div class="card-body">
+                                <h5 class="card-title">Top 1</h5>
+                                <p class="card-text">
+                                    Grooming
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img
+                                src="images/vacc.jpg"
+                                class="card-img-top"
+                                alt=""
+                                />
+                                <div class="card-body">
+                                <h5 class="card-title">Top 2</h5>
+                                <p class="card-text">
+                                   Vaccination
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img
+                                src="images/check-up.jpg"
+                                class="card-img-top"
+                                alt=""
+                                />
+                                <div class="card-body">
+                                <h5 class="card-title">Top 3</h5>
+                                <p class="card-text">
+                                    Check-Up
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+    <!-- END SECTION EXTRA 2 -->
+
+    <!-- START SHOP -->
+    <div class="container-fluid shop" data-aos="fade-up">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="sectionTitle">SHOP</h2>
+                <img src="images/title_underline.webp" />
+            </div>
+            <div class="clearfix">&nbsp;</div>
+            <div class="clearfix">&nbsp;</div>
+            <div class="clearfix">&nbsp;</div>
+            <div class="row">
+                <div class="col text-center">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col">
+                                <img
+                                src="images/lace1.png"
+                                class="card-img-top"
+                                alt=""
+                                />
+                                <div class="clearfix">&nbsp;</div>
+                                <div class="clearfix">&nbsp;</div>
+                                <h3>Leash</h3>
+                                <i class="fa-solid fa-ellipsis"></i>
+                                <div class="clearfix">&nbsp;</div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="clearfix">&nbsp;</div>
+                                <h1>P150</h1>
+                                <button class="btn btn-primary btnBuyNow">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col">
+                                <img
+                                src="images/catfood02.jpg"
+                                class="card-img-top"
+                                alt=""
+                                />
+                                <div class="clearfix">&nbsp;</div>
+                                <div class="clearfix">&nbsp;</div>
+                                <h3>Cat Food</h3>
+                                <i class="fa-solid fa-ellipsis"></i>
+                                <div class="clearfix">&nbsp;</div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="clearfix">&nbsp;</div>
+                                <h1>P250</h1>
+                                <button class="btn btn-primary btnBuyNow">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col">
+                                <img
+                                src="images/df1.png"
+                                class="card-img-top"
+                                alt=""
+                                />
+                                <div class="clearfix">&nbsp;</div>
+                                <div class="clearfix">&nbsp;</div>
+                                <h3>Dog Food</h3>
+                                <i class="fa-solid fa-ellipsis"></i>
+                                <div class="clearfix">&nbsp;</div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="clearfix">&nbsp;</div>
+                                <h1>P350</h1>
+                                <button class="btn btn-primary btnBuyNow">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center sectionButtons"><a class="btn btn-primary" href="our-products.html" style="color: white;"><i class="fa fa-search-plus" aria-hidden="true"></i>&nbsp;&nbsp;More Products</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- END SHOP -->
+
+    <!-- FOOTER -->
+    <div class="container-fluid footer">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center footerLogoWrapper">
+                    <div class="logoCenter"><img src="images/mpc-logo.png" border="0" class="logo"></div>
+                </div>
+                <div class="col">
+                    <div class="footerTitle">Contact Info</div>
+                    <div class="footerSubContent">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>mabalacatpetclinic@yahoo.com</span>
+                    </div>
+                    <div class="footerSubContent">
+                        <i class="fa-brands fa-facebook"></i>
+                       Mabalacat Pet Clinic
+                    </div>
+                    <div class="footerSubContent">
+                        <i class="fa-solid fa-phone"></i>
+                        +63 8907 675 6765
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footerTitle">About Us</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil possimus magnam beatae aliquid porro</p>
+                </div>
+                <div class="col">
+                    <div class="footerTitle">Subscribe</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil possimus magnam beatae aliquid porro</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END FOOTER -->
+
+    <!-- FOOTER COPYRIGHT -->
+    <div class="container-fluid footerCopyright">
+        <div class="container">
+            <div class="socialMedia">
+                <div>Mabalacat Pet Clinic &copy; 2023 All rights reserved.</div>
+                <div>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Welcome to Mabalacat Pet Clinic!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Offers affordable veterinary services across 1 branch throughout Mabalacat Pampanga.</p>
+                    <p>Specializes in the treatment of dos who are Distemper Virus positive.</p>
+                    <p>Has a wide variety of medicine and special prescription diets for your pets.</p>
+                    <p>Ready to book?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Product -->
+    <div class="modal fade" id="myModalHome" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title-product" id="exampleModalLabelHome">Deluxe Bath & Groom</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Suspendisse at suscipit est. Cras in rutrum est. Donec a odio sed urna blandit gravida quis vel tellus. Sed ac dapibus eros. Proin dictum metus et augue efficitur, quis pharetra elit placerat.</p>
+                    <div class="alert alert-dark" role="alert">
+                        <span class="priceLabel">Price: </span>
+                        <span class="price">P 125</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="add-to-cart.html" class="btn btn-warning">Add To Cart</a>
+                    <a href="checkout.html" class="btn btn-primary">Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END FOOTER COPYRIGHT -->
+    <!-- HTML structure for the preloader -->
+    <div id="preloader">
+        <div id="loader"></div>
+        <img src="images/mpc-logo.png" width="300" class="logoLoader">
+    </div>
+</body>
+</html>
